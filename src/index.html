@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="87x54" href="../images/logo.svg" />
+    <link rel="stylesheet" href="../dist/style.css" />
+
+    <title>Tip Calculator App</title>
+  </head>
+  <body class="font-['Space_Mono'] bg-[#C5E4E7]">
+    <header>
+      <h1
+        class="mx-[38.4vw] mt-[13.33vw] mb-[10.93vw] flex justify-center xl:mx-[47.01vw] xl:mt-[11.31vw] xl:mb-[6.11vw]"
+      >
+        <img src="../images/logo.svg" alt="splitter logo" />
+      </h1>
+    </header>
+    <main
+      class="p-8 flex flex-col gap-8 bg-white w-full h-auto rounded-t-[25px] drop-shadow-[0_32px_43px_rgba(79,166,175,0.20)] xl:mx-auto xl:mb-[16.59vw] xl:w-[57.5rem] xl:h-[30.063rem] xl:flex-row xl:gap-12 xl:rounded-[25px] animate-movein"
+    >
+      <div
+        class="flex flex-col gap-8 xl:w-[23.688rem] xl:h-[24.25rem] xl:mt-[0.813rem] xl:ml-[0.813rem] xl:mb-4 xl:gap-10"
+      >
+        <!-- Total Bill -->
+        <div class="flex flex-col gap-[0.375rem]">
+          <h2 class="font-bold text-base tracking-normal text-[#5E7A7D]">
+            Bill
+          </h2>
+          <div class="relative">
+            <svg
+              class="absolute left-[1.25rem] top-[1rem]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="17"
+            >
+              <path
+                fill="#9EBBBD"
+                d="M6.016 16.328v-1.464c1.232-.08 2.22-.444 2.964-1.092.744-.648 1.116-1.508 1.116-2.58v-.144c0-.992-.348-1.772-1.044-2.34-.696-.568-1.708-.932-3.036-1.092V4.184c.56.144 1.012.4 1.356.768.344.368.516.816.516 1.344v.288h1.824v-.432c0-.448-.088-.876-.264-1.284a3.783 3.783 0 00-.744-1.116A4.251 4.251 0 007.54 2.9a5.324 5.324 0 00-1.524-.492V.872H4.288V2.36a5.532 5.532 0 00-1.416.324c-.448.168-.84.392-1.176.672-.336.28-.604.616-.804 1.008-.2.392-.3.844-.3 1.356v.144c0 .96.316 1.708.948 2.244.632.536 1.548.884 2.748 1.044v3.912c-.704-.16-1.248-.472-1.632-.936-.384-.464-.576-1.08-.576-1.848v-.288H.256v.576c0 .464.08.924.24 1.38.16.456.404.88.732 1.272.328.392.744.728 1.248 1.008s1.108.476 1.812.588v1.512h1.728zM4.288 7.424c-.688-.128-1.164-.332-1.428-.612-.264-.28-.396-.644-.396-1.092 0-.464.176-.832.528-1.104.352-.272.784-.448 1.296-.528v3.336zm1.728 5.712V9.344c.768.128 1.328.328 1.68.6.352.272.528.688.528 1.248 0 .544-.196.984-.588 1.32-.392.336-.932.544-1.62.624z"
+              />
+            </svg>
+            <input
+              type="number"
+              name="bill-amount"
+              id="bill-amount"
+              placeholder="0"
+              autocomplete="off"
+              value=""
+              class="px-[1.125rem] py-[0.375rem] rounded-[5px] font-bold text-2xl leading-[2.25rem] tracking-normal text-[#00474B] text-right bg-[#F3F9FA] appearance-textfield w-full focus:outline-none focus:ring focus:ring-[#26C2AE] placeholder:font-bold placeholder:text-2xl placeholder:leading-[2.25rem] placeholder:tracking-normal placeholder:text-[#00474B] placeholder:opacity-[0.35]"
+            />
+          </div>
+        </div>
+
+        <!-- Tip Amount Percentage -->
+        <div class="flex flex-col gap-4">
+          <h2 class="font-bold text-base tracking-normal text-[#5E7A7D]">
+            Select Tip %
+          </h2>
+          <div
+            class="grid grid-cols-2 grid-rows-3 gap-x-[1.063rem] gap-y-4 xl:grid-cols-3 xl:grid-rows-2 xl:gap-x-[0.875rem]"
+          >
+            <div
+              class="tip-button flex justify-center items-center cursor-pointer hover:scale-[1.05] active:translate-y-px"
+            >
+              <input
+                class="appearance-none cursor-pointer peer"
+                type="radio"
+                name="tip"
+                id="tip-5"
+                value="5"
+              />
+              <label
+                class="flex items-center justify-center font-bold text-2xl leading-[2.25rem] tracking-normal text-white text-center bg-[#00474B] rounded-[5px] w-full h-full cursor-pointer peer-checked:bg-[#26C2AE] peer-checked:text-[#00474B]"
+                for="tip-5"
+                >5%</label
+              >
+            </div>
+            <div
+              class="tip-button flex justify-center items-center cursor-pointer hover:scale-[1.05] active:translate-y-px"
+            >
+              <input
+                class="appearance-none cursor-pointer peer"
+                type="radio"
+                name="tip"
+                id="tip-10"
+                value="10"
+              />
+              <label
+                class="flex items-center justify-center font-bold text-2xl leading-[2.25rem] tracking-normal text-white text-center bg-[#00474B] rounded-[5px] w-full h-full cursor-pointer peer-checked:bg-[#26C2AE] peer-checked:text-[#00474B]"
+                for="tip-10"
+                >10%</label
+              >
+            </div>
+            <div
+              class="tip-button flex justify-center items-center cursor-pointer hover:scale-[1.05] active:translate-y-px"
+            >
+              <input
+                class="appearance-none cursor-pointer peer"
+                type="radio"
+                name="tip"
+                id="tip-15"
+                value="15"
+              />
+              <label
+                class="flex items-center justify-center font-bold text-2xl leading-[2.25rem] tracking-normal text-white text-center bg-[#00474B] rounded-[5px] w-full h-full cursor-pointer peer-checked:bg-[#26C2AE] peer-checked:text-[#00474B]"
+                for="tip-15"
+                >15%</label
+              >
+            </div>
+            <div
+              class="tip-button flex justify-center items-center cursor-pointer hover:scale-[1.05] active:translate-y-px"
+            >
+              <input
+                class="appearance-none cursor-pointer peer"
+                type="radio"
+                name="tip"
+                id="tip-25"
+                value="25"
+              />
+              <label
+                class="flex items-center justify-center font-bold text-2xl leading-[2.25rem] tracking-normal text-white text-center bg-[#00474B] rounded-[5px] w-full h-full cursor-pointer peer-checked:bg-[#26C2AE] peer-checked:text-[#00474B]"
+                for="tip-25"
+                >25%</label
+              >
+            </div>
+            <div
+              class="tip-button flex justify-center items-center cursor-pointer hover:scale-[1.05] active:translate-y-px"
+            >
+              <input
+                class="appearance-none cursor-pointer peer"
+                type="radio"
+                name="tip"
+                id="tip-50"
+                value="50"
+              />
+              <label
+                class="flex items-center justify-center font-bold text-2xl leading-[2.25rem] tracking-normal text-white text-center bg-[#00474B] rounded-[5px] w-full h-full cursor-pointer peer-checked:bg-[#26C2AE] peer-checked:text-[#00474B]"
+                for="tip-50"
+                >50%</label
+              >
+            </div>
+            <input
+              class="px-[1.188rem] py-[0.375rem] bg-[#F3F9FA] rounded-[5px] font-bold text-2xl leading-[2.25rem] tracking-normal text-[#00474B] text-right appearance-textfield focus:outline-none focus:ring focus:ring-[#26C2AE] placeholder:font-bold placeholder:text-2xl placeholder:leading-[2.25rem] placeholder:text-[#547878] xl:px-[0.875rem]"
+              type="number"
+              name="custom-tip"
+              id="custom-tip"
+              placeholder="Custom"
+              autocomplete="off"
+              min="0"
+            />
+          </div>
+        </div>
+
+        <!-- Number of People -->
+        <div class="flex flex-col gap-[0.375rem] relative">
+          <h2 class="font-bold text-base tracking-normal text-[#5E7A7D]">
+            Number of People
+          </h2>
+          <p
+            id="error-message"
+            class="font-bold text-xs tracking-normal text-[#E17457] absolute right-0 top-0 hidden xl:text-base"
+          >
+            Can't be zero
+          </p>
+          <div class="relative">
+            <svg
+              class="absolute left-[1.25rem] top-[1rem]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="16"
+            >
+              <path
+                fill="#9EBBBD"
+                d="M9.573 7.729c.406 0 .784.07 1.126.209.342.14.639.33.881.569.232.227.438.503.614.82a5.1 5.1 0 01.407.949c.097.312.178.654.242 1.016.062.359.105.699.126 1.011.02.307.031.624.031.945 0 .836-.259 1.512-.768 2.01-.504.492-1.17.742-1.98.742H2.748c-.81 0-1.477-.25-1.98-.742C.259 14.76 0 14.084 0 13.248c0-.322.01-.64.032-.945.02-.312.063-.652.126-1.01.063-.363.144-.705.242-1.017.1-.323.238-.643.407-.948.176-.318.382-.594.613-.821.243-.238.54-.43.882-.57.342-.138.72-.208 1.125-.208.16 0 .313.067.61.265.183.123.397.264.636.421.204.134.48.259.822.372.333.11.671.167 1.005.167a3.19 3.19 0 001.006-.167c.341-.113.618-.238.822-.372l.636-.42c.296-.2.45-.266.61-.266zM6.598 0C7.63 0 8.522.38 9.252 1.129s1.1 1.666 1.1 2.724c0 1.06-.37 1.976-1.1 2.725-.73.75-1.623 1.13-2.654 1.13-1.03 0-1.924-.38-2.653-1.13-.73-.749-1.1-1.666-1.1-2.725 0-1.058.37-1.975 1.1-2.724C4.675.379 5.567 0 6.598 0z"
+              />
+            </svg>
+            <input
+              type="number"
+              name="people"
+              id="people"
+              placeholder="0"
+              autocomplete="off"
+              value=""
+              class="px-[1.125rem] py-[0.375rem] rounded-[5px] font-bold text-2xl leading-[2.25rem] tracking-normal text-[#00474B] text-right bg-[#F3F9FA] appearance-textfield w-full focus:outline-none focus:ring focus:ring-[#26C2AE] placeholder:font-bold placeholder:text-2xl placeholder:leading-[2.25rem] placeholder:tracking-normal placeholder:text-[#00474B] placeholder:opacity-[0.35]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Total Amounts -->
+      <div
+        class="px-[1.5rem] pb-[1.5rem] pt-[2.313rem] flex flex-col gap-8 bg-[#00474B] rounded-[15px] xl:p-10 xl:w-[25.813rem] xl:h-[26.063rem] xl:gap-[7.625rem]"
+      >
+        <div class="flex flex-col gap-5 xl:gap-[1.563rem]">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="font-bold text-base tracking-normal text-white">
+                Tip Amount
+              </h3>
+              <p
+                class="font-bold text-[0.813rem] leading-[1.188rem] tracking-normal text-[#7F9D9F]"
+              >
+                / person
+              </p>
+            </div>
+            <p
+              id="tip-amount"
+              class="font-bold text-[2rem] leading-[2.938rem] tracking-[0.042rem] text-[#26C2AE] xl:text-5xl xl:leading-[4.438rem] xl:tracking-[-0.063rem]"
+            >
+              $0.00
+            </p>
+          </div>
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="font-bold text-base tracking-normal text-white">
+                Total
+              </h3>
+              <p
+                class="font-bold text-[0.813rem] leading-[1.188rem] tracking-normal text-[#7F9D9F]"
+              >
+                / person
+              </p>
+            </div>
+            <p
+              id="total-amount"
+              class="font-bold text-[2rem] leading-[2.938rem] tracking-[0.042rem] text-[#26C2AE] xl:text-5xl xl:leading-[4.438rem] xl:tracking-[-0.063rem]"
+            >
+              $0.00
+            </p>
+          </div>
+        </div>
+        <button
+          id="reset-button"
+          class="px-8 py-[0.563rem] bg-[#26C2AE] rounded-[5px] font-bold text-xl leading-[1.875rem] tracking-normal text-[#00474B] shadow-md shadow-black/40 hover:bg-[#9FE8DF] active:bg-[#9FE8DF] active:shadow active:shadow-black/40 active:translate-y-[0.125rem] disabled:bg-[#0D686D] disabled:text-[#00474B]/[0.35] disabled:cursor-not-allowed"
+          disabled
+        >
+          RESET
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

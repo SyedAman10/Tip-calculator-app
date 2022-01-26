@@ -4,10 +4,10 @@ Tip calculator app built with HTML ,CSS AND JAVASCIPRT
 
 # Technologies Used
 
-Tailwind CSS
-Semantic HTML5
-Flexbox
-Grid
+. Tailwind CSS
+. Semantic HTML5
+. Flexbox
+. Grid
 
 
 # Screenshots

@@ -2,7 +2,7 @@
 
 Tip calculator app built with HTML ,CSS AND JAVASCIPRT
 
-#Technologies Used
+# Technologies Used
 
 Tailwind CSS
 Semantic HTML5
@@ -10,7 +10,7 @@ Flexbox
 Grid
 
 
-#Screenshots
+# Screenshots
 Desktop View
 
 ![desktop-view](https://user-images.githubusercontent.com/76704798/151174449-927cfff6-902b-433c-84c6-934749e57a9c.png)

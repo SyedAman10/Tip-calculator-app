@@ -10,6 +10,10 @@ Tip calculator app built with HTML ,CSS AND JAVASCIPRT
 . Grid
 
 
+# DEMO
+
+https://epic-payne-db07bd.netlify.app/
+
 # Screenshots
 Desktop View
 

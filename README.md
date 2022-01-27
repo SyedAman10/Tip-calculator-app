@@ -1,14 +1,18 @@
 # Tip-calculator-app
 
-Tip calculator app built with HTML ,CSS AND JAVASCIPRT
+Tip calculator app where you can calculate the tips on the basis of total bill. Feel free to use it and give it a star
 
 # Technologies Used
 
-. Tailwind CSS
-. Semantic HTML5
-. Flexbox
-. Grid
+* Tailwind CSS
+* Semantic HTML5
+* Flexbox
+* Grid
 
+# Languages Used
+* HTML
+* CSS
+* JS
 
 # DEMO
 
